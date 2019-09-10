@@ -13,8 +13,8 @@ node {
   // ------------------------------- Define Variables ------------------------------------------------
     SPRING_APP = "spring-music-app"
     APPLICATION_NAME = "${BUILD_USER_FIRST_NAME}-${SPRING_APP}"
-    DEPLOY_SPACE = "Development"
-    PCF_ORG = "CSNP"
+    DEPLOY_SPACE = "development"
+    PCF_ORG = "CyberSecurity Non-Profit"
     ARTIFACT_URL = "http://3.17.145.188:8081/artifactory/chicago-workshop/"
     SONARQUBE_ENDPOINT = "http://18.188.152.100:9000"
     PCF_ENDPOINT = "https://api.run.pivotal.io"
