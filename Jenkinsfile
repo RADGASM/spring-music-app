@@ -14,7 +14,7 @@ node {
     SPRING_APP = "spring-music-app"
     APPLICATION_NAME = "${BUILD_USER_FIRST_NAME}-${SPRING_APP}"
     DEPLOY_SPACE = "Development"
-    PCF_ORG = "your_org_name"
+    PCF_ORG = "CSNP"
     ARTIFACT_URL = "http://3.17.145.188:8081/artifactory/chicago-workshop/"
     SONARQUBE_ENDPOINT = "http://18.188.152.100:9000"
     PCF_ENDPOINT = "https://api.run.pivotal.io"
@@ -30,12 +30,12 @@ node {
       ],
       [
       $class          : 'UsernamePasswordMultiBinding',
-      credentialsId   : 'yourname_pef_user',
+      credentialsId   : 'radgasm_pef_user',
       passwordVariable: 'PCF_PASSWORD',
       usernameVariable: 'PCF_USERNAME'
       ],[
       $class          : 'UsernamePasswordMultiBinding',
-      credentialsId   : 'abdel_art_user',
+      credentialsId   : 'radgasm_pcf_user',
       passwordVariable: 'ART_PASSWORD',
       usernameVariable: 'ART_USERNAME'
       ]]){
